@@ -1,0 +1,22 @@
+# Create an ex- branch : ex-branch
+cmd		: 	git branch branch_name(ex-branch)
+PS		:	new branch is equals with last current branch, but modified in other branch is not effected to last current branch, or master branch.
+
+# View all of branches contained by repository.
+cmd		:	git branch
+reply from Git	:	ex-branch
+			* master
+PS		:	* branch is currently used.
+
+# Switch branch from master to ex-branch.
+cmd		:	git checkout branch_name(local)
+reply from Git  :	Swithced to branch 'local'.
+
+# Merge branch such as merge branch 'local' to branch 'master'.
+cmd		:	git checkout master -- switch to branch 'master'.
+			git merge local -- merge local to master.
+# Delete branch.
+cmd		: 	git branch -d local -- del branch 'local',but mode -d only delete branch which has joined with merging. 
+			git branch -D local -- If del any branch which may havenot joined with merging.
+
+# Clone branch.?

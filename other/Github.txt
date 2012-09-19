@@ -1,0 +1,12 @@
+# This is to set SSH Keys after git client has set up.
+
+# 1.Check SSH Keys(which should be stored in user/.ssh) exists?
+    cmd		:	cd ~/.ssh
+    backup ssh-keys:	mkdir key-backup -----> cp id_rsa* key-backup -----> rm _rsa*
+  2.Generate new ssh-keys?
+    cmd 	:	ssh-keygen -t -rsa -C "shendawei0727@163.com"
+    Generating public/private rsa key pair.
+    Enter file in which to save the key(/c/Users/sgz_xiaowu/.ssh/id_rsa):none
+    Enter passphrase (empty for no passphrase):none
+
+    reply : Your identification has been saved in /c/Users/sgz_xiaowu/.ssh/id_rsa.	    Your public key has been saved in /c/Users/sgz_xiaowu/.ssh/id_rsa.pub.	    The key fingerprint is 36:cb:98:8c:f8:eb:3e:5f:64:55:c4:47:9f:af:57:e5 shendawei0727@163.com
