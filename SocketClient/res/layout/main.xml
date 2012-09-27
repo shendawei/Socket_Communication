@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello" />
+    
+    <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="240dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:id="@+id/TextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="bottom"
+        android:gravity="bottom" >
+
+        <Button
+            android:id="@+id/Button01"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="connect" >
+        </Button>
+
+        <EditText
+            android:id="@+id/EditText01"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="message" >
+        </EditText>
+
+        <Button
+            android:id="@+id/Button02"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="send" >
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>
